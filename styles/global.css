@@ -28,9 +28,6 @@ body,html {
   font: var(--text);
   color: var(--text-secondary);
 
-  @media (width < 80em) {
-    overflow: scroll;
-  }
 }
 
 h1, h2 {
@@ -49,6 +46,14 @@ img {
 .flex-1 {
   flex: 1;
 }
+
 .flex-2 {
   flex: 2;
+}
+
+.flex-mobile{
+  @media (width < 80em) {
+    display: flex;
+    flex-direction: column;
+  }
 }
