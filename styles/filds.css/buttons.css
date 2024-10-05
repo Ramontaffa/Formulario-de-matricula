@@ -7,13 +7,19 @@ button {
   cursor: pointer;
 
   @media (width < 80em) {
-    width: 100%;
+    width: calc(100% - 1.5rem);
     text-align: center;
+    
   }
 
   &.btn-primery {
     background-color: #E43A12;
     color: white;
+
+    @Media  (width < 80em) {
+      width: calc(100% - 1.5rem);
+      margin-inline: auto;
+    }
 
     &:hover, &:focus {
       background-color: #F3541C;
