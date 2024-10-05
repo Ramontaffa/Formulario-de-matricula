@@ -8,6 +8,7 @@ button {
 
   @media (width < 80em) {
     width: 100%;
+    text-align: center;
   }
 
   &.btn-primery {
