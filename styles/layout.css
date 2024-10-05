@@ -18,6 +18,7 @@ main{
   padding: 4rem;
 
   @media (width < 80em) {
+    overflow-y: unset;
     display: flex;
     margin-inline: auto;
     order: 2;

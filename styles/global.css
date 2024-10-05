@@ -23,12 +23,14 @@
   --semantic-error: #DC2626;
 }
 
-body {
-  overflow: hidden;
-
+body,html {
+  overflow-y: hidden;
   font: var(--text);
   color: var(--text-secondary);
 
+  @media (width < 80em) {
+    overflow: scroll;
+  }
 }
 
 h1, h2 {
