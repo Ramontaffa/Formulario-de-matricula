@@ -6,6 +6,10 @@ button {
   border-radius: .5rem;
   cursor: pointer;
 
+  @media (width < 80em) {
+    width: 100%;
+  }
+
   &.btn-primery {
     background-color: #E43A12;
     color: white;
